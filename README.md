@@ -6,27 +6,27 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-1. Install python2 if it is not already installed:
+2. Install python2 if it is not already installed:
 
 ```bash
 brew install python2
 ```
 
-1. Use pip to install the requirements:
+3. Use pip to install the requirements:
 
 ```bash
 sudo pip2 install --upgrade setuptools
 sudo pip2 install -r jasper/client/requirements.txt
 ```
 
-1. Install `portaudio` and `pyaudio`
+4. Install `portaudio` and `pyaudio`
 
 ```bash
 brew install portaudio
 sudo pip2 install pyaudio
 ```
 
-1. Now you may go on to configure jasper
+5. Now you may go on to configure jasper
 
 ------
 
@@ -40,14 +40,14 @@ sudo pip2 install pyaudio
    brew install svn
    ```
 
-   1. Install autoconf and libtool
+   2. Install autoconf and libtool
 
    ```bash
    brew install automake
    brew install libtool
    ```
 
-   1. Install CMUCLMTK
+   3. Install CMUCLMTK
 
    ```bash
    svn co https://svn.code.sf.net/p/cmusphinx/code/trunk/cmuclmtk/
@@ -62,7 +62,7 @@ sudo pip2 install pyaudio
 brew install cmu-pocketsphinx
 ```
 
-1. Install phonetisaurus
+3. Install phonetisaurus
 
    1. install openfst
 
@@ -110,7 +110,7 @@ brew install cmu-pocketsphinx
       ```
 
 
-1. Build the model
+4. Build the model
 
 ```bash
 wget https://www.dropbox.com/s/kfht75czdwucni1/g014b2b.tgz
@@ -121,7 +121,7 @@ cd ..
 mv g014b2b ~/phonetisaurus
 ```
 
-1. modify `g2g.py` to work with our version of `phonetisaurus-g2p`
+5. modify `g2g.py` to work with our version of `phonetisaurus-g2p`
 ```bash
 cd client
 rm g2g.py
