@@ -99,7 +99,7 @@ brew install cmu-pocketsphinx
    6. Grab an updated make file for OS X
 
       ```bash
-      wget new.Makefile
+      wget https://raw.githubusercontent.com/pudility/jasper-osx/master/resources/Makefile
       ```
 
    7. make and copy to `/usr/local/bin`
@@ -122,3 +122,8 @@ mv g014b2b ~/phonetisaurus
 ```
 
 1. modify `g2g.py` to work with our version of `phonetisaurus-g2p`
+```bash
+cd client
+rm g2g.py
+wget https://raw.githubusercontent.com/pudility/jasper-osx/master/resources/g2p.py
+```
